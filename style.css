@@ -1,0 +1,88 @@
+/* h1{
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+#info{
+    text-align: center;
+    font-family: 'Playpen Sans', cursive;
+} */
+
+html{
+    background-color: #f0f0f0;
+}
+
+#drongo{
+    /* border: 5px solid black; */
+    margin-top: 1rem;
+}
+
+#bulbul{
+    /* border: 5px solid black; */
+    margin-top: 1rem;
+}
+
+
+#kingfisher{
+    /* border: 5px solid black; */
+    margin-top: 1rem;
+}
+
+
+#hornbill{
+    /* border: 5px solid black; */
+    margin-top: 1rem;
+}
+
+
+#birds{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textbelow{
+    margin-left: 1.2rem;
+    margin-right: 1rem;
+    text-align: left;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+
+}
+
+.sub{
+    color: black;
+    text-align: center;
+    margin: 4px;
+    background-color: #D8D9DA;
+    /* margin-bottom: 25rem; */
+    text-decoration: none;
+    border-radius: 10px;
+    transition:transform 0.2s;
+    }
+
+.sub:hover {
+    background-color: rgb(216, 217, 218, 0.7);
+    transform:scale(1.02);
+  }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0; /* Adjust the background color as needed */
+    text-align: center;
+    /* padding: 10px 0; Add padding for spacing */
+    margin: 0;
+  }
+  
+
+
+

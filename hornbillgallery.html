@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+html{
+    background-color: #FFFBF5;
+}
+.gallery{
+    background-color:black;
+}
+.cn
+{
+  width: 160px;
+  height: 40px;
+  background:#f0f0f0;
+  border:none;
+  margin-bottom: 1px;
+  margin-left: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s ease;
+  
+}
+.cn a{
+  text-decoration: none;
+  color: black;
+  transition: .3s ease;
+}
+
+.cn:hover{
+  background-color:#D8D9DA;
+
+}
+
+.mySlides{
+  border-radius: 10px;
+}
+
+</style>
+<body bgcolor="white">
+
+<h2 style="color:#fff" background class="gallery"><center>GALLERY</center></h2>
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://shiftingradius.com/wp-content/uploads/2022/04/IMG_1028edit-standard.jpg" style="width:100%"height="600">
+  <img class="mySlides" src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/144002931/" style="width:100%" height="600">
+  <img class="mySlides" src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/288902821/" style="width:100%"height="600">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<button class="cn"><a href="./homepage.html">BACK</a></button>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+ x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
